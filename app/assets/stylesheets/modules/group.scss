@@ -82,6 +82,7 @@
     line-height: 50px;
     font-size: 14px;
     border-bottom: 1px solid #ddd;
+    
     &:after {
       content: "";
       clear: both;
@@ -100,7 +101,6 @@
       &.chat-group-user__btn--add {
         color: #38aef0;
       }
-
       &.chat-group-user__btn--remove {
         color: #f05050;
       }
