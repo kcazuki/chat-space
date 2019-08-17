@@ -5,11 +5,13 @@
   .chat
     .header
       .left-header
-        .left-header__title
+        %ul.left-header__title
           = @group.name
         %ul.header-left__members
-          %li.member 
-          = current_user.name
+          %ul.left-header_members
+          = "メンバー: " 
+          - @group.users.each do |user|
+            = user.name
 
       .right-header
         .right-header__button
