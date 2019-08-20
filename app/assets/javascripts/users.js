@@ -72,8 +72,10 @@ $(function(){
     addUser(user_id, user_name);
     $(this).parent().remove();
   });
+
   // 削除ボタンクリック時の処理
   $('#chat-group-users').on('click', '.chat-group-user__btn--remove', function () {
     $(this).parent().remove();
   });
+  
 });
